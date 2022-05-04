@@ -193,6 +193,6 @@ app.get("/realtime_view", function (req, res) {
   }, 10000);
 });
 
-app.listen(PORT, function () {
+app.listen(process.env.PORT || 8000, function () {
   console.log(`Server is running on ${PORT}`);
 });
